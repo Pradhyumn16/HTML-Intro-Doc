@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+   <div class="flex-container">
+    <nav id="navbar">
+      <header>HTML Intro Docs</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#History">History</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#How_web_work">How web work</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Delivery">Delivery</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Extras">Extras</a>
+        </li>
+      </ul>    
+
+    </nav>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+        <p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.</p>
+      </section>
+      <section class="main-section" id="History">
+        <header>History</header>
+        <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.[3] Berners-Lee specified HTML and wrote the browser and server software in late 1990.The first publicly available description of HTML was a document called "HTML Tags",[5] first mentioned on the Internet by Tim Berners-Lee in late 1991.[6][7] It describes 18 elements comprising the initial, relatively simple design of HTML.</p>
+        <p>Berners-Lee considered HTML to be an application of SGML. It was formally defined as such by the Internet Engineering Task Force (IETF) with the mid-1993 publication of the first proposal for an HTML specification, the "Hypertext Markup Language (HTML)" Internet Draft by Berners-Lee and Dan Connolly, which included an SGML Document type definition to define the syntax</p>
+        <p>Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.</p>
+      
+      </section>
+
+      <section class="main-section" id="How_web_work">
+        <header>How web work</header>
+        <ul>
+          <header>Clients and servers</header>
+          <p>Computers connected to the internet are called clients and servers. A simplified diagram of how they interact might look like this:</p>
+          <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works/simple-client-server.png" height="auto" width="400" object-fit="cover" alt="Clients and servers interaction" loading="lazy">
+          <li>Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).
+          </li>
+          <li>Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.
+          </li>
+          <br>
+          <header>The other parts of the toolbox</header>
+          <p>The client and server we've described above don't tell the whole story.In addition to the client and the server, we also need to say hello to: </p>
+          <li><b>Your internet connection:</b> Allows you to send and receive data on the web. It's basically like the street between your house and the shop.</li>
+          <li><b>IP:</b> Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the internet. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods.</li>
+          <li><b>DNS:</b> Domain Name System is like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's IP address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place.</li>
+          <li><b>HTTP:</b>Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other.</li>
+          <li><b>Component files:</b> A website is made up of many different files.These files can be code files or multimedia or other types of files.</li>
+          <p></p>
+        </ul>
+      </section>
+
+      <section class="main-section"  id="Delivery">
+        <header>Delivery</header>
+        <p>
+          HTML documents can be delivered by the same means as any other computer file. However, they are most often delivered either by HTTP from a web server or by email.
+        </p>
+        <ul>
+
+          <li>
+            <header>HTTP</header>
+            <p>The World Wide Web is composed primarily of HTML documents transmitted from web servers to web browsers using the Hypertext Transfer Protocol (HTTP). However, HTTP is used to serve images, sound, and other content, in addition to HTML. To allow the web browser to know how to handle each document it receives, other information is transmitted along with the document. This meta data usually includes the MIME type (e.g., text/html or application/xhtml+xml) and the character encoding (see Character encoding in HTML).</p>
+
+<p>In modern browsers, the MIME type that is sent with the HTML document may affect how the document is initially interpreted. A document sent with the XHTML MIME type is expected to be well-formed XML; syntax errors may cause the browser to fail to render it. The same document sent with the HTML MIME type might be displayed successfully since some browsers are more lenient with HTML.</p>
+
+<p>The W3C recommendations state that XHTML 1.0 documents that follow guidelines set forth in the recommendation's Appendix C may be labeled with either MIME Type.[89] XHTML 1.1 also states that XHTML 1.1 documents should[90] be labeled with either MIME type.[91]</p>
+          </li>
+          <li>
+            <header>HTML e-mail</header>
+            <p>Most graphical email clients allow the use of a subset of HTML (often ill-defined) to provide formatting and semantic markup not available with plain text. This may include typographic information like colored headings, emphasized and quoted text, inline images and diagrams. Many such clients include both a GUI editor for composing HTML e-mail messages and a rendering engine for displaying them. Use of HTML in e-mail is criticized by some because of compatibility issues, because it can help disguise phishing attacks, because of accessibility issues for blind or visually impaired people, because it can confuse spam filters and because the message size is larger than plain text.</p>
+          </li>
+          <li>
+            <header>Naming conventions</header>
+            <p>The most common filename extension for files containing HTML is .html. A common abbreviation of this is .htm, which originated because some early operating systems and file systems, such as DOS and the limitations imposed by FAT data structure, limited file extensions to three letters.[92]</p>
+          </li>
+          <li>
+            <header>HTML Application</header>
+            <p>An HTML Application (HTA; file extension .hat) is a Microsoft Windows application that uses HTML and Dynamic HTML in a browser to provide the application's graphical interface. A regular HTML file is confined to the security model of the web browser's security, communicating only to web servers and manipulating only web page objects and site cookies. An HTA runs as a fully trusted application and therefore has more privileges, like creation/editing/removal of files and Windows Registry entries. Because they operate outside the browser's security model, HTAs cannot be executed via HTTP, but must be downloaded (just like an EXE file) and executed from local file system.</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="main-section" id="Extras">
+        <header>Extras</header>
+        <p>
+        <li>Need some more Historical info?...
+        Want to learn about the HTML timeline...<a href="https://en.wikipedia.org/wiki/HTML#History" target="blank">Click here</a>
+        </li>
+        <li>Want more detailed contents about HTML...<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="blank">Click here</a>
+        </li>
+        </p>
+      </section>
+
+    </main>
+    </div>
+  </body>
+</html>
